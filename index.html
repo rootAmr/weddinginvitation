@@ -3,16 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Assa ❤️ Dedy – Undanganku</title>
+    <title>Wedding Assa ❤ Dedy – Undanganku</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
 <style>
+
+.section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Ganti URL gambar sesuai keinginan */
+#welcome {
+    background-image: url('https://i.imgur.com/4ZLjml9.jpeg');
+}
+
+#save-the-date {
+    background-image: url('https://i.imgur.com/OTSvr8S.png');
+}
+
+#quote {
+    background-image: url('https://i.imgur.com/HP5BQKL.png');
+}
+
+#akad {
+    background-image: url('https://i.imgur.com/OTSvr8S.png');
+}
+
+#resepsi {
+    background-image: url('https://i.imgur.com/HP5BQKL.png');
+}
+
+#wedding-gift {
+    background-image: url('https://i.imgur.com/HP5BQKL.png');
+}
+
+#terimakasih {
+    background-image: url('https://i.imgur.com/LUAus7c.jpeg');
+}
+
+
+
+/* Pastikan konten di dalam tetap terlihat */
+.section * {
+    position: relative;
+    z-index: 2;
+}
     html {
         font-size: 16px;
     }
     
-    body.no-scroll {
+body.no-scroll {
     overflow: hidden;
-    }
+    height: 100vh;
+}
     
     iframe {
         margin-top: 20px;
@@ -22,7 +66,7 @@
     
     /* Styling umum untuk seluruh halaman */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
     margin: 0;
@@ -38,12 +82,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#terimakasih h1 {
-    font-size: 2.5em;
-    color: #4CAF50;
-    margin-bottom: 10px;
 }
 
 #terimakasih p {
@@ -77,7 +115,7 @@ body {
 }
 
 #comment-form button {
-    background-color: #4CAF50;
+    background-color: #149cdb;
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -88,7 +126,7 @@ body {
 }
 
 #comment-form button:hover {
-    background-color: #45a049;
+    background-color: #0d75a6;
 }
 
 /* Styling untuk daftar komentar */
@@ -111,7 +149,7 @@ body {
 }
 
 .comment p strong {
-    color: #4CAF50;
+    color: #000508;
     font-size: 1.1em;
 }
 
@@ -168,7 +206,7 @@ small {
     
 
     body {
-        font-family: 'Segoe UI', sans-serif;
+        font-family: 'Poppins', sans-serif;
         color: #333;
         margin: 0;
         padding: 0;
@@ -183,7 +221,7 @@ small {
         top: 0;
         left: 0;
         right: 0;
-        background-color: #3d9a62;
+        background-color: #8fd2ff;
         padding: 10px 20px;
         z-index: 1000;
     }
@@ -228,7 +266,7 @@ small {
     h1 {
         font-family: 'Great Vibes', cursive;
         font-size: 8vw;
-        color: #3d9a62;
+        color: #000305;
         max-width: 90%;
         word-wrap: break-word;
         text-align: center;
@@ -252,13 +290,14 @@ small {
         font-size: 1.5rem;
         max-width: 90%;
         text-align: center;
+        margin-bottom: 5px;
         word-wrap: break-word;
     }
 
     .btn {
         margin-top: 20px;
         padding: 15px 30px;
-        background-color: #3d9a62;
+        background-color: #149cdb;
         color: white;
         font-size: 1.6rem;
         border: none;
@@ -271,19 +310,9 @@ small {
     }
 
     .btn:hover {
-        background-color: #317a50;
+        background-color: #0d75a6;
     }
 
-    #countdown {
-        font-size: 4rem;
-        font-weight: bold;
-        color: #3d9a62;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 0, 0.3);
-        margin-top: 20px;
-        text-align: center;
-        max-width: 90%;
-        word-wrap: break-word;
-    }
 
 
 
@@ -311,7 +340,7 @@ small {
             font-size: 4vw;
         }
 
-        #countdown {
+        #flip-clock {
             font-size: 3rem;
         }
     }
@@ -338,25 +367,67 @@ small {
             font-size: 4.5vw;
         }
 
-        #countdown {
+        #flip-clock {
             font-size: 2.5rem;
         }
     }
+    
+.flip-clock {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif; /* Pastikan Mukta Malar tersedia */
+}
+
+.flip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000508;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.flip-box {
+    background: #000; /* Hitam */
+    color: #fff; /* Putih */
+    font-size: 3rem;
+    font-weight: bold;
+    width: 80px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Efek bayangan putih */
+    text-align: center;
+    position: relative;
+}
+
 </style>
 
 </head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <body>
-    <div class="section" id="welcome">
-        <h1>Assa & Dedy</h1>
-        <p>Kepada Bapak/Ibu/Saudara/i</p>
-        <p><strong>Nanda Dwi Saputri / Suami</strong></p>
-        <p>Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
-        <button class="btn" id="openInvitationBtn" onclick="showInvitation()">Buka Undangan</button>
-        <p style="margin-top: 10px; font-size: 0.9rem; color: #777;">Mohon maaf apabila ada kesalahan penulisan nama/gelar</p>
-    </div>
+<audio id="backgroundMusic" src="https://dl.dropboxusercontent.com/scl/fi/nz3ngetgszgv63o6bhjj1/ANDMESH-ANUGERAH-TERINDAH-OFFICIAL-MUSIC-VIDEO.mp3?rlkey=gktwpeehk6mav24f9vy1sa8km&st=6f916x9g"></audio>
 
+<div class="section" id="welcome">
+    <h1>Assa & Dedy</h1>
+    <p>Kepada Bapak/Ibu/Saudara/i</p>
+    <p><strong id="guest-name">Tamu Undangan</strong></p>
+    <p>Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
+    <button class="btn" id="openInvitationBtn">Buka Undangan</button>
+    <p style="margin-top: 10px; font-size: 0.9rem; color: #777;">
+        Mohon maaf apabila ada kesalahan penulisan nama/gelar
+    </p>
+</div>
 
     <nav>
         <ul>
@@ -367,32 +438,51 @@ small {
             <li><a href="#resepsi"><i class="fas fa-glass-cheers"></i></a></li>
         </ul>
     </nav>
+    
+     <div class="section hidden" id="quote">
+        <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri...” { QS. Ar-Rum : 21 }</p>
+    </div>
 
     <div class="section hidden" id="save-the-date">
         <h2>Save the Date</h2>
         <p>You're invited to the wedding of</p>
         <h1>Assa & Dedy</h1>
         <p>Rabu, 11 Desember 2024</p>
-        <div id="countdown">0 Hari 0 Jam 0 Menit 0 Detik</div>
+        
+<div class="flip-clock">
+    <div class="flip-container">
+        <span class="label">Hari</span>
+        <div class="flip-box" id="days">00</div>
+    </div>
+    <div class="flip-container">
+        <span class="label">Jam</span>
+        <div class="flip-box" id="hours">00</div>
+    </div>
+    <div class="flip-container">
+        <span class="label">Menit</span>
+        <div class="flip-box" id="minutes">00</div>
+    </div>
+    <div class="flip-container">
+        <span class="label">Detik</span>
+        <div class="flip-box" id="seconds">00</div>
+    </div>
+</div>
+
+
     </div>
 
-
-    <div class="section hidden" id="quote">
-        <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri...” { QS. Ar-Rum : 21 }</p>
-    </div>
-
-
-    <div class="section hidden" id="akad">
-        <h1>Akad Nikah</h1>
-        <p>Selasa, 10 Desember 2024</p>
-        <p>09.00 Wita</p>
-        <p>Bertempat Di</p>
-        <p>Jl. Cokroaminoto RT. 17 No. 16 Desa Gas Alam Badak 1</p>
-    <h3>Resepsi</h3>
-    <p>Rabu, 11 Desember 2024 </p>
-    <p>09.00 Wita - 22.00 Wita</p>
+<div class="section hidden" id="akad">
+    <h2>Akad Nikah</h2>
+    <p><i class="fa-solid fa-calendar"></i> Selasa, 10 Desember 2024</p>
+    <p><i class="fa-solid fa-clock"></i> 09.00 Wita</p>
     <p>Bertempat Di</p>
-    <p>JL. Poros Plant. 13 Sambera, Simpang 4, RT.04 Sambera Tengah, Desa Salo Cella</p>
+    <p><i class="fa-solid fa-location-dot"></i> Jl. Cokroaminoto RT. 17 No. 16 Desa Gas Alam Badak 1</p>
+    <h3>Resepsi</h3>
+    <p><i class="fa-solid fa-calendar"></i> Rabu, 11 Desember 2024</p>
+    <p><i class="fa-solid fa-clock"></i> 09.00 Wita - 22.00 Wita</p>
+    <p>Bertempat Di</p>
+    <p><i class="fa-solid fa-location-dot"></i> JL. Poros Plant. 13 Sambera, Simpang 4, RT.04 Sambera Tengah, Desa Salo Cella</p>
+
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127661.77011727463!2d117.4175744!3d-0.3244032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df5c38574db5fff%3A0x6ac748c8a9bc91a!2sSekarini%20Hotel!5e0!3m2!1sen!2sid!4v1708170000000!5m2!1sen!2sid"
         width="100%"
@@ -432,158 +522,206 @@ small {
             <button type="submit" id="submit-comment" class="btn">Kirim Komentar</button>
         </form>
         <h3>Komentar:</h3>
-        <div id="comments-list"></div>
+        <div id="comments-list">
+    <p>Memuat komentar...</p>
+</div>
     </div>
 </div>
         
 
     <script>
-document.getElementById('comment-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Mencegah form dari pengiriman default
+document.addEventListener("DOMContentLoaded", function () {
+    // Mengambil elemen-elemen penting
+    const commentForm = document.getElementById("comment-form");
+    const commentsList = document.getElementById("comments-list");
+    const nameInput = document.getElementById("name");
+    const messageInput = document.getElementById("message");
+    const attendanceInput = document.getElementById("attendance");
+    const openInvitationBtn = document.getElementById("openInvitationBtn");
+    const nav = document.querySelector("nav");
+    const sections = document.querySelectorAll(".section");
+    let currentIndex = 0;
 
-    const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
-    const attendance = document.getElementById('attendance').value; // Menangkap konfirmasi kehadiran
+    // Pastikan elemen-elemen ditemukan sebelum mengaksesnya
+    if (commentForm && commentsList) {
+        commentForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Mencegah pengiriman form
 
-    const newComment = {
-        name: name,
-        message: message,
-        attendance: attendance, // Menambahkan konfirmasi kehadiran
-        timestamp: new Date().toISOString() // Menambahkan waktu saat komentar dibuat
-    };
+            const newComment = {
+                name: nameInput.value || "Anonim",
+                message: messageInput.value || "Tidak ada pesan",
+                attendance: attendanceInput.value || "Tidak diketahui",
+                timestamp: new Date().toISOString()
+            };
 
-    // Mengirim data ke Firebase Realtime Database menggunakan POST (untuk menambah data)
-    fetch('https://comentar-88d13-default-rtdb.firebaseio.com/komentar.json', {
-        method: 'POST', // Menggunakan POST untuk menambahkan data
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(newComment) // Mengubah objek komentar menjadi JSON
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log("Komentar berhasil dikirim:", data);
-        addCommentToList(newComment); // Menambahkan komentar baru langsung ke tampilan
-        document.getElementById('comment-form').reset(); // Mengosongkan form setelah pengiriman
-    })
-    .catch(error => {
-        console.error("Error sending comment:", error);
+            // Mengirim data ke Firebase
+            fetch("https://comentar-88d13-default-rtdb.firebaseio.com/komentar.json", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(newComment)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Komentar berhasil dikirim:", data);
+                addCommentToList(newComment); // Tambahkan komentar ke tampilan
+                commentForm.reset(); // Reset form
+            })
+            .catch(error => console.error("Error sending comment:", error));
+        });
+
+        // Memuat komentar dari Firebase
+        function loadComments() {
+            commentsList.innerHTML = ""; // Hapus komentar lama
+
+            fetch("https://comentar-88d13-default-rtdb.firebaseio.com/komentar.json")
+            .then(response => response.json())
+            .then(data => {
+                console.log("Data komentar dari Firebase:", data);
+
+                if (data) {
+                    Object.keys(data).forEach(id => {
+                        const comment = data[id];
+                        if (comment && comment.name && comment.message) {
+                            addCommentToList(comment);
+                        }
+                    });
+                } else {
+                    commentsList.innerHTML = "<p>Belum ada komentar.</p>";
+                }
+            })
+            .catch(error => {
+                console.error("Error fetching comments:", error);
+                commentsList.innerHTML = "<p>Gagal memuat komentar.</p>";
+            });
+        }
+
+        // Menambahkan komentar ke tampilan
+        function addCommentToList(comment) {
+            const commentDiv = document.createElement("div");
+            commentDiv.classList.add("comment");
+
+            const name = comment.name || "Anonim";
+            const attendance = comment.attendance || "Tidak diketahui";
+            const message = comment.message || "";
+            const timestamp = comment.timestamp ? new Date(comment.timestamp).toLocaleString() : "Waktu tidak tersedia";
+
+            commentDiv.innerHTML = `
+                <p><strong>${name}</strong> - <em>${attendance}</em></p>
+                <p>${message}</p>
+                <p><small>${timestamp}</small></p>
+                <hr />
+            `;
+            commentsList.appendChild(commentDiv);
+        }
+
+        loadComments(); // Memuat komentar saat halaman dibuka
+    }
+
+    // Fungsi menampilkan undangan
+    function showInvitation() {
+        document.getElementById("welcome").classList.add("hidden");
+        openInvitationBtn.style.display = "none"; // Sembunyikan tombol setelah diklik
+        nav.style.display = "block"; // Tampilkan navigasi
+        document.body.classList.remove("no-scroll"); // Aktifkan scrolling
+
+        setTimeout(() => {
+            sections[currentIndex].classList.add("hidden");
+            currentIndex = 1;
+            sections[currentIndex].classList.remove("hidden");
+        }, 800);
+    }
+
+    if (openInvitationBtn) {
+        openInvitationBtn.addEventListener("click", showInvitation);
+    }
+
+    // Navigasi dengan scroll
+document.addEventListener("wheel", (event) => {
+        if (!isOpened) return; // Cegah scroll sebelum tombol ditekan
+
+        if (event.deltaY > 0 && currentIndex < sections.length - 1) {
+            sections[currentIndex].classList.add("hidden");
+            setTimeout(() => {
+                currentIndex++;
+                sections[currentIndex].classList.remove("hidden");
+            }, 800);
+        } else if (event.deltaY < 0 && currentIndex > 0) {
+            sections[currentIndex].classList.add("hidden");
+            setTimeout(() => {
+                currentIndex--;
+                sections[currentIndex].classList.remove("hidden");
+            }, 800);
+        }
     });
 });
 
-// Fungsi untuk menampilkan komentar dari Firebase
-function loadComments() {
-    const commentsList = document.getElementById('comments-list');
-    commentsList.innerHTML = ''; // Menghapus komentar yang ada sebelum memuat ulang
+document.addEventListener("DOMContentLoaded", function () {
+    document.body.classList.add("no-scroll"); // Mencegah scroll saat pertama kali dimuat
+    let isOpened = false; // Status apakah undangan sudah dibuka
 
-    // Mengambil data komentar dari Firebase
-    fetch('https://comentar-88d13-default-rtdb.firebaseio.com/komentar.json')
-        .then(response => response.json())
-        .then(data => {
-            // Cek apakah ada komentar
-            if (data) {
-                for (let id in data) {
-                    const comment = data[id];
-                    addCommentToList(comment); // Menambahkan komentar ke tampilan
-                }
-            } else {
-                commentsList.innerHTML = '<p>Belum ada komentar.</p>';
-            }
-        })
-        .catch(error => {
-            console.error("Error fetching comments:", error);
-            commentsList.innerHTML = '<p>Gagal memuat komentar.</p>';
+    const openInvitationBtn = document.getElementById("openInvitationBtn");
+    const sections = document.querySelectorAll(".section");
+    const music = document.getElementById("backgroundMusic"); // Ambil elemen audio
+    let currentIndex = 0;
+
+    if (openInvitationBtn) {
+        openInvitationBtn.addEventListener("click", function () {
+            document.body.classList.remove("no-scroll"); // Izinkan scroll setelah tombol diklik
+            isOpened = true; // Set status bahwa undangan telah dibuka
+
+            // Putar musik
+            music.play().catch(error => console.log("Autoplay tidak diizinkan: ", error));
+
+            // Sembunyikan tombol setelah ditekan (opsional)
+            openInvitationBtn.style.display = "none";
+
+            // Tampilkan navigasi (opsional)
+            document.querySelector("nav").style.display = "block";
         });
+    }
+    
+    function updateCountdown() {
+    const weddingDate = new Date("February 31, 2025 00:00:00").getTime();
+    const now = new Date().getTime();
+    const diff = weddingDate - now;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days.toString().padStart(2, '0');
+    document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
 }
 
-// Fungsi untuk menambahkan komentar ke dalam tampilan
-function addCommentToList(comment) {
-    const commentsList = document.getElementById('comments-list');
-    const commentDiv = document.createElement('div');
-    commentDiv.classList.add('comment');
-    commentDiv.innerHTML = `
-        <p><strong>${comment.name}</strong> - <em>${comment.attendance}</em></p>
-        <p>${comment.message}</p>
-        <p><small>${new Date(comment.timestamp).toLocaleString()}</small></p>
-        <hr />
-    `;
-    commentsList.appendChild(commentDiv);
-}
+setInterval(updateCountdown, 1000);
+updateCountdown();
 
-// Panggil loadComments saat halaman dimuat
-window.onload = loadComments;
-      
-      
-        let currentIndex = 0;
-        const sections = document.querySelectorAll('.section');
-        const nav = document.querySelector('nav');
-        const openInvitationBtn = document.getElementById('openInvitationBtn');
+    
 
-        function showInvitation() {
-            document.getElementById('welcome').classList.add('hidden');
-            openInvitationBtn.style.display = 'none'; // Hide the button after clicking it
-            nav.style.display = 'block'; // Show navigation after opening the invitation
-            setTimeout(() => {
-                sections[currentIndex].classList.add('hidden');
-                currentIndex = 1;
-                sections[currentIndex].classList.remove('hidden');
-            }, 800);
-        }
+    // Mendapatkan parameter dari URL
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
 
-        document.addEventListener('wheel', (event) => {
-            if (event.deltaY > 0 && currentIndex < sections.length - 1) {
-                sections[currentIndex].classList.add('hidden');
-                setTimeout(() => {
-                    currentIndex++;
-                    sections[currentIndex].classList.remove('hidden');
-                }, 800);
-            } else if (event.deltaY < 0 && currentIndex > 0) {
-                sections[currentIndex].classList.add('hidden');
-                setTimeout(() => {
-                    currentIndex--;
-                    sections[currentIndex].classList.remove('hidden');
-                }, 800);
-            }
-        });
+    // Mencegah XSS
+    function sanitizeInput(input) {
+        const temp = document.createElement("div");
+        temp.textContent = input;
+        return temp.innerHTML;
+    }
 
-        // Countdown Timer
-        const targetDate = new Date("February 18, 2025 00:00:00").getTime();
+    // Tampilkan nama tamu undangan berdasarkan URL
+    const guestNameElem = document.getElementById("guest-name");
+    if (guestNameElem) {
+        const guestName = getQueryParam("name");
+        guestNameElem.innerHTML = guestName ? sanitizeInput(guestName) : "Tamu Undangan";
+    }
+});
 
-        const countdownInterval = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("countdown").innerHTML = `${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
-
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                document.getElementById("countdown").innerHTML = "Pernikahan Telah Dimulai!";
-            }
-        }, 1000);
-        
-        
-        document.body.classList.add('no-scroll'); // Nonaktifkan scrolling saat halaman dimuat
-
-function showInvitation() {
-    document.getElementById('welcome').classList.add('hidden');
-    openInvitationBtn.style.display = 'none'; // Sembunyikan tombol setelah diklik
-    nav.style.display = 'block'; // Tampilkan navigasi
-    document.body.classList.remove('no-scroll'); // Aktifkan kembali scrolling
-
-    setTimeout(() => {
-        sections[currentIndex].classList.add('hidden');
-        currentIndex = 1;
-        sections[currentIndex].classList.remove('hidden');
-    }, 800);
-}
     </script>
 </body>
 </html>
-
-
-
