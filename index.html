@@ -178,199 +178,154 @@ small {
     #comment-form input,
     #comment-form textarea,
     #comment-form select {
-        font-size: 0.95em;
+        font-size: 1rem;
+        width: 100%;
     }
 
     #comment-form button {
-        font-size: 1.1em;
-        padding: 10px 15px;
+        font-size: 1.2rem;
+        padding: 12px;
     }
 
     #terimakasih {
         margin: 15px;
     }
-}
-    
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
     #comments-section {
         padding: 15px;
     }
+}
 
-    #comment-form input, #comment-form textarea {
-        font-size: 16px;
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #8fd2ff;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 8vw;
+    color: #000305;
+    max-width: 90%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+h2, h3, p {
+    max-width: 90%;
+    text-align: center;
+}
+
+h2 { font-size: 3rem; font-weight: bold; }
+h3 { font-size: 2rem; font-weight: bold; }
+p  { font-size: 1.5rem; margin-bottom: 5px; word-wrap: break-word; }
+
+.btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #149cdb;
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+    max-width: 80%;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0d75a6;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .btn {
+        padding: 12px 25px;
+        font-size: 1.4rem;
+        max-width: 90%;
+    }
+
+    h1 { font-size: 10vw; }
+    h2 { font-size: 4vw; }
+    h3 { font-size: 3.5vw; }
+    p  { font-size: 4vw; }
+
+    #flip-clock {
+        font-size: 3rem;
     }
 }
-    
 
-    body {
-        font-family: 'Poppins', sans-serif;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9;
-        height: 100%;
-        overflow-y: auto;
-    }
-
-    nav {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #8fd2ff;
-        padding: 10px 20px;
-        z-index: 1000;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav ul li {
-        margin: 0 15px;
-    }
-
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: bold;
-        transition: font-size 0.3s ease;
-    }
-
-    nav ul li a:hover {
-        color: #fff;
-        text-decoration: underline;
-    }
-
-    .section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        min-height: 100vh;
-        flex-direction: column;
-        text-align: center;
-        position: relative;
-        padding: 20px;
-    }
-
-    h1 {
-        font-family: 'Great Vibes', cursive;
-        font-size: 8vw;
-        color: #000305;
-        max-width: 90%;
-        word-wrap: break-word;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 3rem;
-        font-weight: bold;
-        max-width: 90%;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: 2rem;
-        font-weight: bold;
-        max-width: 90%;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1.5rem;
-        max-width: 90%;
-        text-align: center;
-        margin-bottom: 5px;
-        word-wrap: break-word;
-    }
-
+/* Responsif untuk layar sangat kecil */
+@media (max-width: 480px) {
     .btn {
-        margin-top: 20px;
-        padding: 15px 30px;
-        background-color: #149cdb;
-        color: white;
-        font-size: 1.6rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: background 0.3s;
-        max-width: 80%;
-        text-align: center;
+        font-size: 1.2rem;
+        padding: 10px 20px;
     }
 
-    .btn:hover {
-        background-color: #0d75a6;
+    h1 { font-size: 12vw; }
+    h2 { font-size: 5vw; }
+    h3 { font-size: 4.5vw; }
+    p  { font-size: 4.5vw; }
+
+    #flip-clock {
+        font-size: 2.5rem;
     }
+}
 
-
-
-
-    /* Responsif untuk layar kecil */
-    @media (max-width: 768px) {
-        .btn {
-            padding: 12px 25px;
-            font-size: 1.4rem;
-            max-width: 90%;
-        }
-
-        h1 {
-            font-size: 10vw;
-        }
-
-        h2 {
-            font-size: 4vw;
-        }
-
-        h3 {
-            font-size: 3.5vw;
-        }
-
-        p {
-            font-size: 4vw;
-        }
-
-        #flip-clock {
-            font-size: 3rem;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .btn {
-            font-size: 1.2rem;
-            padding: 10px 20px;
-        }
-
-        h1 {
-            font-size: 12vw;
-        }
-
-        h2 {
-            font-size: 5vw;
-        }
-
-        h3 {
-            font-size: 4.5vw;
-        }
-
-        p {
-            font-size: 4.5vw;
-        }
-
-        #flip-clock {
-            font-size: 2.5rem;
-        }
-    }
     
 .flip-clock {
     display: flex;
