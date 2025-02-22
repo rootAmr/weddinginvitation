@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Assa ❤ Dedy – Undanganku</title>
+    <title>Wedding Assa ❤ Dedy </title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
 <style>
 
@@ -21,6 +21,11 @@
 #save-the-date {
     background-image: url('https://i.imgur.com/OTSvr8S.png');
 }
+
+#mempelai {
+    background-image: url('https://i.imgur.com/OTSvr8S.png');
+}
+
 
 #quote {
     background-image: url('https://i.imgur.com/HP5BQKL.png');
@@ -73,16 +78,6 @@ body {
     padding: 0;
 }
 
-/* Styling untuk bagian terimakasih */
-#terimakasih {
-    text-align: center;
-    margin: 30px auto;
-    max-width: 800px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 #terimakasih p {
     font-size: 1.1em;
@@ -303,6 +298,7 @@ p  { font-size: 1.5rem; margin-bottom: 5px; word-wrap: break-word; }
     h2 { font-size: 4vw; }
     h3 { font-size: 3.5vw; }
     p  { font-size: 4vw; }
+    
 
     #flip-clock {
         font-size: 3rem;
@@ -365,6 +361,54 @@ p  { font-size: 1.5rem; margin-bottom: 5px; word-wrap: break-word; }
     position: relative;
 }
 
+.frame {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px; /* Memberikan ruang di dalam bingkai */
+    border: 5px solid #149cdb; /* Warna emas */
+    width: fit-content;
+    background-color: white; /* Opsional, untuk memberikan efek bingkai lebih jelas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.wedding-photo {
+    width: 300px; /* Sesuaikan ukuran */
+    height: auto;
+    object-fit: cover;
+}
+
+.mempelai {
+    text-align: center;
+    margin-bottom: 30px; /* Beri jarak antar mempelai */
+}
+
+.mempelai-photo {
+    width: 250px; /* Sesuaikan ukuran */
+    height: auto;
+    border-radius: 20px 20px 0 0; /* Membulatkan dua sudut atas */
+    border: 4px solid #d4af37; /* Bingkai warna emas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.nowrap {
+    white-space: nowrap; /* Mencegah teks turun ke baris berikutnya */
+}
+
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.map-frame {
+    width: 700px; /* Lebar persegi */
+    height: 500px; /* Tinggi persegi */
+    border: 4px solid #d4af37; /* Border warna emas */
+    border-radius: 10px; /* Membuat sudut agak membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan */
+}
 </style>
 
 </head>
@@ -374,6 +418,9 @@ p  { font-size: 1.5rem; margin-bottom: 5px; word-wrap: break-word; }
 <audio id="backgroundMusic" src="https://dl.dropboxusercontent.com/scl/fi/nz3ngetgszgv63o6bhjj1/ANDMESH-ANUGERAH-TERINDAH-OFFICIAL-MUSIC-VIDEO.mp3?rlkey=gktwpeehk6mav24f9vy1sa8km&st=6f916x9g"></audio>
 
 <div class="section" id="welcome">
+    <div class="frame">
+        <img src="https://undanganku.web.id/wp-content/uploads/2024/11/image-3.jpg" alt="Assa & Dedy" class="wedding-photo">
+    </div>
     <h1>Assa & Dedy</h1>
     <p>Kepada Bapak/Ibu/Saudara/i</p>
     <p><strong id="guest-name">Tamu Undangan</strong></p>
@@ -397,6 +444,26 @@ p  { font-size: 1.5rem; margin-bottom: 5px; word-wrap: break-word; }
      <div class="section hidden" id="quote">
         <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri...” { QS. Ar-Rum : 21 }</p>
     </div>
+    
+    
+<div class="section hidden" id="mempelai">
+    <p>Dengan Memohon Rahmat Dan Ridho Dari Allah SWT. Kami Bermaksud Menyelenggarakan Syukuran Pernikahan Putra Putri Kami</p>
+
+    <div class="mempelai">
+        <img src="https://undanganku.web.id/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-30-at-13.01.23.jpeg" alt="Assa Carlina" class="mempelai-photo">
+        <h1>Assa Carlina</h1>
+        <p>Putri Bungsu Dari :<br> 
+        <span class="nowrap">Bapak Amir dan Ibu (Almh.) Fatma</span>
+    </div>
+      <h1>&</h1>
+    <div class="mempelai">
+        <img src="https://undanganku.web.id/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-30-at-13.01.23-1.jpeg" alt="Dedy" class="mempelai-photo">
+        <h1>Dedy</h1>
+        <p>Putri Bungsu Dari :<br> 
+        <span class="nowrap">Bapak Amir dan Ibu (Almh.) Fatma</span>
+      </p>
+    </div>
+</div>
 
     <div class="section hidden" id="save-the-date">
         <h2>Save the Date</h2>
@@ -432,27 +499,29 @@ p  { font-size: 1.5rem; margin-bottom: 5px; word-wrap: break-word; }
     <p><i class="fa-solid fa-clock"></i> 09.00 Wita</p>
     <p>Bertempat Di</p>
     <p><i class="fa-solid fa-location-dot"></i> Jl. Cokroaminoto RT. 17 No. 16 Desa Gas Alam Badak 1</p>
+    
     <h3>Resepsi</h3>
     <p><i class="fa-solid fa-calendar"></i> Rabu, 11 Desember 2024</p>
     <p><i class="fa-solid fa-clock"></i> 09.00 Wita - 22.00 Wita</p>
     <p>Bertempat Di</p>
     <p><i class="fa-solid fa-location-dot"></i> JL. Poros Plant. 13 Sambera, Simpang 4, RT.04 Sambera Tengah, Desa Salo Cella</p>
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127661.77011727463!2d117.4175744!3d-0.3244032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df5c38574db5fff%3A0x6ac748c8a9bc91a!2sSekarini%20Hotel!5e0!3m2!1sen!2sid!4v1708170000000!5m2!1sen!2sid"
-        width="100%"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127661.77011727463!2d117.4175744!3d-0.3244032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df5c38574db5fff%3A0x6ac748c8a9bc91a!2sSekarini%20Hotel!5e0!3m2!1sen!2sid!4v1708170000000!5m2!1sen!2sid"
+            class="map-frame"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
 </div>
 
     <div class="section hidden" id="wedding-gift">
         <h1>Wedding Gift</h1>
         <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami</p>
         <p>Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
+        <img src="https://undanganku.web.id/wp-content/uploads/2024/11/LOGO-MANDIRI-2.png" alt="bank" class="wedding-gift">
         <p>a.n Dedy 1480017205686</p>
         <p>Anda Juga Bisa Mengirim Kado Fisik Ke Alamat Berikut</p>
         <p>JL. Poros Plant. 13 Sambera, Simpang 4, RT.04 Sambera Tengah, Desa Salo Cella</p>
