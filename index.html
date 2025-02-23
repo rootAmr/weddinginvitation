@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Assa ❤ Dedy </title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+.section {
+    background-size: cover;  /* Memastikan gambar mengisi seluruh area */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Pastikan setiap section memiliki tinggi minimal 100% dari viewport */
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -26,3 +42,753 @@ html, body {
         background-size: cover;
     }
 }
+
+/* Ganti URL gambar sesuai keinginan */
+#welcome {
+    background-image: url('https://i.imgur.com/4ZLjml9.jpeg');
+}
+
+#save-the-date {
+    background-image: url('https://i.imgur.com/OTSvr8S.png');
+}
+
+#mempelai {
+    background-image: url('https://i.imgur.com/OTSvr8S.png');
+}
+
+
+#quote {
+    background-image: url('https://i.imgur.com/HP5BQKL.png');
+}
+
+#akad {
+    background-image: url('https://i.imgur.com/OTSvr8S.png');
+}
+
+#resepsi {
+    background-image: url('https://i.imgur.com/HP5BQKL.png');
+}
+
+#wedding-gift {
+    background-image: url('https://i.imgur.com/HP5BQKL.png');
+}
+
+#terimakasih {
+    background-image: url('https://i.imgur.com/LUAus7c.jpeg');
+}
+
+
+
+/* Pastikan konten di dalam tetap terlihat */
+.section * {
+    position: relative;
+    z-index: 2;
+}
+    html {
+        font-size: 16px;
+    }
+    
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+    
+    iframe {
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Styling umum untuk seluruh halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+#terimakasih p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Styling untuk form komentar */
+#comment-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#comment-form input,
+#comment-form textarea,
+#comment-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#comment-form button {
+    background-color: #149cdb;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#comment-form button:hover {
+    background-color: #0d75a6;
+}
+
+/* Styling untuk daftar komentar */
+#comments-list {
+    margin-top: 30px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.comment p strong {
+    color: #000508;
+    font-size: 1.1em;
+}
+
+.comment p em {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.comment hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+small {
+    color: #888;
+    font-size: 0.85em;
+}
+
+/* Responsif: Menyesuaikan layout pada ukuran layar lebih kecil */
+@media (max-width: 768px) {
+    #comment-form {
+        padding: 15px;
+    }
+
+    #comment-form input,
+    #comment-form textarea,
+    #comment-form select {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #comment-form button {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    #terimakasih {
+        margin: 15px;
+    }
+
+    #comments-section {
+        padding: 15px;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #8fd2ff;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 8vw;
+    color: #000305;
+    max-width: 90%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+h2, h3, p {
+    max-width: 90%;
+    text-align: center;
+}
+
+h2 { font-size: 3rem; font-weight: bold; }
+h3 { font-size: 2rem; font-weight: bold; }
+p  { font-size: 1.5rem; margin-bottom: 5px; word-wrap: break-word; }
+
+.btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #149cdb;
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+    max-width: 80%;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0d75a6;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .btn {
+        padding: 12px 25px;
+        font-size: 1.4rem;
+        max-width: 90%;
+    }
+
+    h1 { font-size: 10vw; }
+    h2 { font-size: 4vw; }
+    h3 { font-size: 3.5vw; }
+    p  { font-size: 4vw; }
+    
+
+    #flip-clock {
+        font-size: 3rem;
+    }
+}
+
+/* Responsif untuk layar sangat kecil */
+@media (max-width: 480px) {
+    .btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    h1 { font-size: 12vw; }
+    h2 { font-size: 5vw; }
+    h3 { font-size: 4.5vw; }
+    p  { font-size: 4.5vw; }
+
+    #flip-clock {
+        font-size: 2.5rem;
+    }
+}
+
+    
+.flip-clock {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif; /* Pastikan Mukta Malar tersedia */
+}
+
+.flip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000508;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.flip-box {
+    background: #000; /* Hitam */
+    color: #fff; /* Putih */
+    font-size: 3rem;
+    font-weight: bold;
+    width: 80px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Efek bayangan putih */
+    text-align: center;
+    position: relative;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px; /* Memberikan ruang di dalam bingkai */
+    border: 5px solid #149cdb; /* Warna emas */
+    width: fit-content;
+    background-color: white; /* Opsional, untuk memberikan efek bingkai lebih jelas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.wedding-photo {
+    width: 300px; /* Sesuaikan ukuran */
+    height: auto;
+    object-fit: cover;
+}
+
+.mempelai {
+    text-align: center;
+    margin-bottom: 30px; /* Beri jarak antar mempelai */
+}
+
+.mempelai-photo {
+    width: 250px; /* Sesuaikan ukuran */
+    height: auto;
+    border-radius: 20px 20px 0 0; /* Membulatkan dua sudut atas */
+    border: 4px solid #d4af37; /* Bingkai warna emas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.nowrap {
+    white-space: nowrap; /* Mencegah teks turun ke baris berikutnya */
+}
+
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.map-frame {
+    width: 700px; /* Lebar persegi */
+    height: 500px; /* Tinggi persegi */
+    border: 4px solid #d4af37; /* Border warna emas */
+    border-radius: 10px; /* Membuat sudut agak membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan */
+    
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    text-align: center;
+}
+
+.frame img {
+    width: 100%;
+    max-width: 300px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+h1, p, button {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+h1 {
+    animation-delay: 0.2s;
+}
+
+p {
+    animation-delay: 0.4s;
+}
+
+button {
+    animation-delay: 0.6s;
+}
+
+
+</style>
+
+</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<body>
+<audio id="backgroundMusic" src="https://dl.dropboxusercontent.com/scl/fi/nz3ngetgszgv63o6bhjj1/ANDMESH-ANUGERAH-TERINDAH-OFFICIAL-MUSIC-VIDEO.mp3?rlkey=gktwpeehk6mav24f9vy1sa8km&st=6f916x9g"></audio>
+
+<div class="section" id="welcome">
+    <div class="frame">
+        <img src="https://undanganku.web.id/wp-content/uploads/2024/11/image-3.jpg" alt="Assa & Dedy" class="wedding-photo">
+    </div>
+    <h1>Assa & Dedy</h1>
+    <p>Kepada Bapak/Ibu/Saudara/i</p>
+    <p><strong id="guest-name">Tamu Undangan</strong></p>
+    <p>Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
+    <button class="btn" id="openInvitationBtn">Buka Undangan</button>
+    <p style="margin-top: 10px; font-size: 0.9rem; color: #777;">
+        Mohon maaf apabila ada kesalahan penulisan nama/gelar
+    </p>
+</div>
+
+    <nav>
+        <ul>
+            <li><a href="#welcome"><i class="fas fa-home"></i></a></li>
+            <li><a href="#save-the-date"><i class="fas fa-calendar-check"></i></a></li>
+            <li><a href="#quote"><i class="fas fa-quote-right"></i></a></li>
+            <li><a href="#akad"><i class="fas fa-ring"></i></a></li>
+            <li><a href="#resepsi"><i class="fas fa-glass-cheers"></i></a></li>
+        </ul>
+    </nav>
+    
+     <div class="section hidden" id="quote">
+        <p>“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri...” { QS. Ar-Rum : 21 }</p>
+    </div>
+    
+    
+<div class="section hidden" id="mempelai">
+    <p>Dengan Memohon Rahmat Dan Ridho Dari Allah SWT. Kami Bermaksud Menyelenggarakan Syukuran Pernikahan Putra Putri Kami</p>
+
+    <div class="mempelai">
+        <img src="https://undanganku.web.id/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-30-at-13.01.23.jpeg" alt="Assa Carlina" class="mempelai-photo">
+        <h1>Assa Carlina</h1>
+        <p>Putri Bungsu Dari :<br> 
+        <span class="nowrap">Bapak Amir dan Ibu (Almh.) Fatma</span>
+    </div>
+      <h1>&</h1>
+    <div class="mempelai">
+        <img src="https://undanganku.web.id/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-30-at-13.01.23-1.jpeg" alt="Dedy" class="mempelai-photo">
+        <h1>Dedy</h1>
+        <p>Putri Bungsu Dari :<br> 
+        <span class="nowrap">Bapak Amir dan Ibu (Almh.) Fatma</span>
+      </p>
+    </div>
+</div>
+
+    <div class="section hidden" id="save-the-date">
+        <h2>Save the Date</h2>
+        <p>You're invited to the wedding of</p>
+        <h1>Assa & Dedy</h1>
+        <p>Rabu, 11 Desember 2024</p>
+        
+<div class="flip-clock">
+    <div class="flip-container">
+        <span class="label">Hari</span>
+        <div class="flip-box" id="days">00</div>
+    </div>
+    <div class="flip-container">
+        <span class="label">Jam</span>
+        <div class="flip-box" id="hours">00</div>
+    </div>
+    <div class="flip-container">
+        <span class="label">Menit</span>
+        <div class="flip-box" id="minutes">00</div>
+    </div>
+    <div class="flip-container">
+        <span class="label">Detik</span>
+        <div class="flip-box" id="seconds">00</div>
+    </div>
+</div>
+
+
+    </div>
+
+<div class="section hidden" id="akad">
+    <h2>Akad Nikah</h2>
+    <p><i class="fa-solid fa-calendar"></i> Selasa, 10 Desember 2024</p>
+    <p><i class="fa-solid fa-clock"></i> 09.00 Wita</p>
+    <p>Bertempat Di</p>
+    <p><i class="fa-solid fa-location-dot"></i> Jl. Cokroaminoto RT. 17 No. 16 Desa Gas Alam Badak 1</p>
+    
+    <h3>Resepsi</h3>
+    <p><i class="fa-solid fa-calendar"></i> Rabu, 11 Desember 2024</p>
+    <p><i class="fa-solid fa-clock"></i> 09.00 Wita - 22.00 Wita</p>
+    <p>Bertempat Di</p>
+    <p><i class="fa-solid fa-location-dot"></i> JL. Poros Plant. 13 Sambera, Simpang 4, RT.04 Sambera Tengah, Desa Salo Cella</p>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127661.77011727463!2d117.4175744!3d-0.3244032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df5c38574db5fff%3A0x6ac748c8a9bc91a!2sSekarini%20Hotel!5e0!3m2!1sen!2sid!4v1708170000000!5m2!1sen!2sid"
+            class="map-frame"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+    <div class="section hidden" id="wedding-gift">
+        <h1>Wedding Gift</h1>
+        <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami</p>
+        <p>Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
+        <img src="https://undanganku.web.id/wp-content/uploads/2024/11/LOGO-MANDIRI-2.png" alt="bank" class="wedding-gift">
+        <p>a.n Dedy 1480017205686</p>
+        <p>Anda Juga Bisa Mengirim Kado Fisik Ke Alamat Berikut</p>
+        <p>JL. Poros Plant. 13 Sambera, Simpang 4, RT.04 Sambera Tengah, Desa Salo Cella</p>
+    </div>
+
+
+<div class="section hidden" id="terimakasih">
+    <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.</p>
+    <h1>Assa & Dedy</h1>
+    <p>11 Desember 2024</p>
+    <div id="comments-section">
+        <h3>Berikan Ucapan Spesial Anda Disini:</h3>
+        <form id="comment-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <label for="attendance">Konfirmasi Kehadiran:</label>
+            <select id="attendance" required>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+                <option value="Masih Ragu">Masih Ragu</option>
+            </select>
+            <button type="submit" id="submit-comment" class="btn">Kirim Komentar</button>
+        </form>
+        <h3>Komentar:</h3>
+        <div id="comments-list">
+    <p>Memuat komentar...</p>
+</div>
+    </div>
+</div>
+        
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.body.classList.add("no-scroll"); // Mencegah scroll saat pertama kali dimuat
+    let isOpened = false; // Status apakah undangan sudah dibuka
+    let currentIndex = 0; // Index untuk navigasi antar section
+
+    // Mengambil elemen-elemen penting
+    const commentForm = document.getElementById("comment-form");
+    const commentsList = document.getElementById("comments-list");
+    const nameInput = document.getElementById("name");
+    const messageInput = document.getElementById("message");
+    const attendanceInput = document.getElementById("attendance");
+    const openInvitationBtn = document.getElementById("openInvitationBtn");
+    const nav = document.querySelector("nav");
+    const sections = document.querySelectorAll(".section");
+    const music = document.getElementById("backgroundMusic");
+
+    // Pastikan elemen-elemen ditemukan sebelum mengaksesnya
+    if (commentForm && commentsList) {
+        commentForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            
+            const newComment = {
+                name: nameInput?.value || "Anonim",
+                message: messageInput?.value || "Tidak ada pesan",
+                attendance: attendanceInput?.value || "Tidak diketahui",
+                timestamp: new Date().toISOString()
+            };
+
+            // Mengirim data ke Firebase
+            fetch("https://comentar-88d13-default-rtdb.firebaseio.com/komentar.json", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(newComment)
+            })
+            .then(response => response.json())
+            .then(() => {
+                addCommentToList(newComment);
+                commentForm.reset();
+            })
+            .catch(error => console.error("Error sending comment:", error));
+        });
+
+        function loadComments() {
+            commentsList.innerHTML = "";
+            fetch("https://comentar-88d13-default-rtdb.firebaseio.com/komentar.json")
+            .then(response => response.json())
+            .then(data => {
+                if (data) {
+                    Object.values(data).forEach(comment => {
+                        if (comment?.name && comment?.message) {
+                            addCommentToList(comment);
+                        }
+                    });
+                } else {
+                    commentsList.innerHTML = "<p>Belum ada komentar.</p>";
+                }
+            })
+            .catch(() => {
+                commentsList.innerHTML = "<p>Gagal memuat komentar.</p>";
+            });
+        }
+
+        function addCommentToList(comment) {
+            const commentDiv = document.createElement("div");
+            commentDiv.classList.add("comment");
+            commentDiv.innerHTML = `
+                <p><strong>${comment.name}</strong> - <em>${comment.attendance}</em></p>
+                <p>${comment.message}</p>
+                <p><small>${new Date(comment.timestamp).toLocaleString()}</small></p>
+                <hr />
+            `;
+            commentsList.appendChild(commentDiv);
+        }
+        loadComments();
+    }
+
+    function showInvitation() {
+        document.getElementById("welcome")?.classList.add("hidden");
+        openInvitationBtn.style.display = "none";
+        nav.style.display = "block";
+        document.body.classList.remove("no-scroll");
+        isOpened = true;
+        
+        if (music) {
+            music.play().catch(error => console.log("Autoplay tidak diizinkan:", error));
+        }
+
+        setTimeout(() => {
+            if (sections.length > 0) {
+                sections[currentIndex].classList.add("hidden");
+                currentIndex = 1;
+                sections[currentIndex].classList.remove("hidden");
+            }
+        }, 800);
+    }
+
+    if (openInvitationBtn) {
+        openInvitationBtn.addEventListener("click", showInvitation);
+    }
+
+    document.addEventListener("wheel", (event) => {
+        if (!isOpened || sections.length === 0) return;
+
+        if (event.deltaY > 0 && currentIndex < sections.length - 1) {
+            sections[currentIndex].classList.add("hidden");
+            setTimeout(() => {
+                currentIndex++;
+                sections[currentIndex].classList.remove("hidden");
+            }, 800);
+        } else if (event.deltaY < 0 && currentIndex > 0) {
+            sections[currentIndex].classList.add("hidden");
+            setTimeout(() => {
+                currentIndex--;
+                sections[currentIndex].classList.remove("hidden");
+            }, 800);
+        }
+    });
+
+    function updateCountdown() {
+        const weddingDate = new Date("February 28, 2025 00:00:00").getTime(); // Tanggal yang valid
+        const now = new Date().getTime();
+        const diff = weddingDate - now;
+
+        if (diff < 0) return;
+
+        document.getElementById("days").textContent = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+        document.getElementById("hours").textContent = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+        document.getElementById("minutes").textContent = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+        document.getElementById("seconds").textContent = Math.floor((diff % (1000 * 60)) / 1000).toString().padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    function getQueryParam(param) {
+        return new URLSearchParams(window.location.search).get(param);
+    }
+    
+    function navigateSection(index) {
+    sections[currentIndex].classList.add("hidden");
+    setTimeout(() => {
+        sections[currentIndex].classList.remove("show");
+        currentIndex = index;
+        sections[currentIndex].classList.remove("hidden");
+        sections[currentIndex].classList.add("show");
+    }, 800);
+}
+
+
+    function sanitizeInput(input) {
+        const temp = document.createElement("div");
+        temp.textContent = input;
+        return temp.innerHTML;
+    }
+
+    const guestNameElem = document.getElementById("guest-name");
+    if (guestNameElem) {
+        const guestName = getQueryParam("name");
+        guestNameElem.innerHTML = guestName ? sanitizeInput(guestName) : "Tamu Undangan";
+    }
+});
+
+
+    </script>
+</body>
+</html>
