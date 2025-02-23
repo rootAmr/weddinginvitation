@@ -8,11 +8,30 @@
 <style>
 
 .section {
-    background-size: cover;  /* Memastikan gambar mengisi seluruh area */
+    background-size: cover; /* Ensure image covers the entire area */
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 320px;/* Pastikan setiap section memiliki tinggi minimal 100% dari viewport */
+    min-height: 100vh; /* Ensure each section takes at least 100% of the viewport height */
+    width: 100%; /* Make section width 100% */
+    min-width: 100%; /* Ensure it fills the entire screen width */
+    padding: 0; /* Remove any default padding */
+}
+
+@media (max-width: 768px) {
+    .section {
+        /* Ensure the section adapts well to smaller mobile screens */
+        min-height: 100vh; /* Keep height at 100% of viewport height */
+        width: 100%;
+        padding: 20px; /* Add some padding for better spacing */
+    }
+}
+
+/* Optional: for very small screens, e.g., under 480px */
+@media (max-width: 480px) {
+    .section {
+        min-height: 100vh; /* Maintain full height */
+        width: 100%; /* Ensure full width */
+    }
 }
 
 
